@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Santhikumar Dugga, Learning, Product &amp; Capability Consultant">
+<meta property="og:description" content="SaaS and AI learning products, emotional intelligence and sentiment insight, capability and operations. Bangalore / Remote.">
+<meta name="author" content="Santhikumar Dugga">
+<meta name="keywords" content="Santhikumar Dugga, learning consultant, L&amp;D consultant Bangalore, SaaS learning products, AI in learning, emotional intelligence, sentiment analysis, capability building, fractional Head of Learning">
+<title>San Dugga Consulting</title>
+<meta name="description" content="Santhikumar Dugga — Learning, Product & Capability Consultant. SaaS and AI learning products, emotional intelligence and sentiment insight, capability and operations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one long road. A single column story, chapters set along a drawn route, then services, the emotion wheel, and a way to start talking. */
+:root{
+  --bg:#f2f5f1; --surface:#ffffff; --ink:#1b2626; --muted:#566360;
+  --line:#d5ddd8; --accent:#a8670a; --road:#1f5c56;
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --p-joy:#e8c33a; --p-trust:#8cc265; --p-fear:#2f9a5c; --p-surprise:#3aa6b8;
+  --p-sadness:#4a78c2; --p-disgust:#8b5cb8; --p-anger:#d24b3e; --p-anticipation:#e58a2e;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#111918; --surface:#182221; --ink:#e6eeea; --muted:#9cada8;
+    --line:#2b3836; --accent:#e9a843; --road:#62b5aa; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#111918; --surface:#182221; --ink:#e6eeea; --muted:#9cada8;
+  --line:#2b3836; --accent:#e9a843; --road:#62b5aa; color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.65;margin:0}
+.wrap{max-width:68rem;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.15;text-wrap:balance;margin:0}
+p{margin:0}
+a{color:var(--road)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.label{font-family:var(--mono);font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+section{padding-block:clamp(3rem,7vw,5.5rem);border-top:1px solid var(--line)}
+.prose{max-width:38rem;display:grid;gap:1rem}
+.prose p{color:var(--ink)}
+.lede{font-size:1.2rem;color:var(--muted)}
+
+/* Hero */
+.hero{padding-block:clamp(2.5rem,7vw,5rem) clamp(2.5rem,6vw,4rem);display:grid;gap:2rem;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);align-items:end}
+.hero h1{font-size:clamp(2.4rem,6.5vw,4.4rem)}
+.hero h1 em{font-style:normal;color:var(--road)}
+.hero .who{display:grid;gap:1.25rem}
+.aside-note{margin-top:2.25rem;max-width:40rem;color:var(--muted);font-size:.98rem;border-left:3px solid var(--line);padding-left:1rem}
+.ind{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr));gap:1.25rem 2.5rem;margin-top:2rem}
+.ind p{display:grid;gap:.15rem;color:var(--muted);border-top:1px solid var(--line);padding-top:.75rem;min-width:0}
+.ind strong{color:var(--ink);font-weight:600}
+.creds{list-style:none;margin:2rem 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,18rem),1fr));gap:.9rem 2.5rem}
+.creds li{font-weight:600;display:grid;gap:.1rem;border-top:1px solid var(--line);padding-top:.7rem}
+.creds li span{font-weight:400;color:var(--muted);font-size:.95rem}
+.phone{font-family:var(--mono);font-size:.95rem;color:var(--muted)}
+.phone span{color:var(--ink);user-select:all}
+.cv{font-weight:600;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.cv:hover{color:var(--accent)}
+.hero .role{font-family:var(--mono);font-size:.85rem;color:var(--muted);letter-spacing:.04em}
+.hero aside{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:1.5rem;display:grid;gap:.9rem}
+.hero aside p{font-size:1rem}
+.names{display:flex;flex-wrap:wrap;gap:.5rem}
+.names span{font-family:var(--mono);font-size:.78rem;border:1px solid var(--line);border-radius:999px;padding:.25rem .7rem;color:var(--muted)}
+.names span.key{border-color:var(--accent);color:var(--accent)}
+@media (max-width:760px){.hero{grid-template-columns:1fr}}
+
+/* Road */
+.road-head{display:grid;gap:1rem;margin-bottom:2.5rem}
+.road-head h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+.road{position:relative;display:grid;gap:2.25rem;padding-left:2.5rem;max-width:44rem}
+.road::before{content:"";position:absolute;left:.7rem;top:.4rem;bottom:.4rem;border-left:3px dashed var(--road);opacity:.55}
+.stop{position:relative;display:grid;gap:.4rem}
+.stop::before{content:"";position:absolute;left:-2.18rem;top:.35rem;width:1.05rem;height:1.05rem;border-radius:50%;background:var(--bg);border:3px solid var(--road)}
+.stop.now::before{background:var(--accent);border-color:var(--accent)}
+.stop .where{font-family:var(--mono);font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.stop h3{font-size:1.45rem}
+.stop p{color:var(--muted);max-width:36rem}
+.stop strong{color:var(--ink);font-weight:600}
+
+/* Services */
+.svc-head{display:grid;gap:1rem;margin-bottom:2.25rem}
+.svc-head h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.svc article{background:var(--surface);padding:1.6rem;display:grid;gap:.6rem;align-content:start;min-width:0}
+.svc h3{font-size:1.25rem}
+.svc p{color:var(--muted);font-size:.98rem}
+.svc .for{font-family:var(--mono);font-size:.74rem;color:var(--road);letter-spacing:.04em}
+
+/* Emotion wheel */
+.ei{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(2rem,5vw,4rem);align-items:center}
+.ei h2{font-size:clamp(1.9rem,4vw,2.7rem)}
+.wheel{max-width:24rem;width:100%;justify-self:center}
+.wheel svg{width:100%;height:auto;display:block}
+.wheel text{font-family:var(--mono);font-size:9.5px;fill:var(--ink)}
+.legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.35rem 1rem;font-size:.92rem;color:var(--muted)}
+.legend span{display:flex;gap:.5rem;align-items:center}
+.legend i{width:.7rem;height:.7rem;border-radius:2px;display:inline-block;flex:none}
+@media (max-width:760px){.ei{grid-template-columns:1fr}}
+
+/* Approach */
+.pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,15rem),1fr));gap:2rem;margin-top:2rem}
+.pairs div{display:grid;gap:.4rem;border-top:2px solid var(--road);padding-top:1rem}
+.pairs h3{font-size:1.2rem}
+.pairs p{color:var(--muted);font-size:.98rem}
+
+/* Contact */
+.contact{display:grid;gap:1.5rem;max-width:40rem}
+.contact h2{font-size:clamp(2rem,5vw,3.2rem)}
+.mail{display:flex;flex-wrap:wrap;gap:.75rem;align-items:center}
+.mail code{font-family:var(--mono);font-size:1.05rem;background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:.6rem .9rem;user-select:all;overflow-wrap:anywhere}
+button{font:600 .95rem var(--body);background:var(--road);color:var(--bg);border:0;border-radius:8px;padding:.7rem 1.1rem;cursor:pointer}
+button:hover{filter:brightness(1.08)}
+.links{display:flex;flex-wrap:wrap;gap:1.25rem;font-weight:600}
+footer{padding-block:2rem 3rem;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){
+  .stop{transition:transform .2s ease}
+  .stop:hover{transform:translateX(4px)}
+}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="who">
+      <span class="label">Santhikumar Dugga · Bangalore / Remote</span>
+      <h1>I go the distance, so people and organisations <em>reach what they set out to build.</em></h1>
+      <p class="role">Learning, Product &amp; Capability Consultant · SaaS &amp; AI learning products · Emotional intelligence &amp; sentiment insight · 19 years</p>
+      <p><a class="cv" href="resume.html">Read the full profile &rarr;</a></p>
+    </div>
+    <aside aria-label="Names collected along the way">
+      <span class="label">Names people gave me</span>
+      <div class="names">
+        <span>Bullet</span><span>Jackie Chan</span><span>Hugs Risk Easily</span><span>The Intruder</span><span>Display of Ideas</span><span>Energy Booster</span><span class="key">Voice of Trust</span>
+      </div>
+      <p>Each one describes something I did when the work got hard. Voice of Trust took longest to earn. It matters most.</p>
+    </aside>
+  </header>
+
+  <section aria-labelledby="story">
+    <div class="road-head">
+      <span class="label">The story</span>
+      <h2 id="story">The first time a course I built changed nothing</h2>
+      <div class="prose">
+        <p class="lede">It was accurate, well designed and delivered on time. People went back to the same process, the same manager and the same tools.</p>
+        <p>The gap was never only knowledge. It was how people felt about the change, and whether anything around them made it easier. Nineteen years later, that is still where I start.</p>
+      </div>
+    </div>
+    <div class="road">
+      <div class="stop">
+        <span class="where">Corporate &amp; government · SoftPro, Excelsoft, Edutech</span>
+        <h3>Learning to listen before proposing</h3>
+        <p>Learning consulting, programme design and implementation, LMS rollouts, corporate training, product development and presales for <strong>Cisco, Infosys, Wipro, Axis Bank, Titan Eye+, Tanishq, BHEL, Bajaj Auto, Volvo (Sweden), United Airlines, Atlas Copco, IBM (Denmark), Hitachi, Emirates NBD, Mashreq, Saudi Aramco, ExxonMobil, Shell Malaysia, RWD (USA) and Paris Gallery (UAE)</strong>, plus IIMB, ISB, the Government of Norway and Karnataka e-governance. Presales taught me to hear the real problem first.</p>
+      </div>
+      <div class="stop">
+        <span class="where">Higher education · iNurture</span>
+        <h3>One quality bar across 20 universities</h3>
+        <p>Content strategy for UGC-approved programmes built by a distributed network of faculty and subject experts. Many institutions on one programme turned out to be a governance problem before it was a design problem.</p>
+      </div>
+      <div class="stop">
+        <span class="where">Early years at scale · Kreedo · 7 years</span>
+        <h3>2,000+ preschools, up to Head of Educational Technology</h3>
+        <p>A curriculum running in <strong>2,000+ preschools</strong>, a business operating system for the network, curriculum design, teacher onboarding and train-the-trainer, a board-level roadmap and budget, impact analysis that steered spend, and a <strong>mobile app</strong> to measure curriculum implementation and impact.</p>
+      </div>
+      <div class="stop">
+        <span class="where">Consulting</span>
+        <h3>When the learner is a customer</h3>
+        <p>A Training Management System, learning apps, and AR/VR experiences for an e-commerce leader and a Big 4 firm's client, where the measure was conversion.</p>
+      </div>
+      <div class="stop now">
+        <span class="where">Now · VVIT University and start-ups</span>
+        <h3>Coaching for placement, consulting for founders</h3>
+        <p>Placement readiness for engineering graduates, with an <strong>AI coach bot</strong> so practice continues after the session ends. Alongside it, product and capability consulting for hologram, deep-tech AI/ML and agriculture start-ups.</p>
+      </div>
+    </div>
+    <p class="aside-note">Also along the way: AR/VR learning at Someshwara, and on the social-impact side, Wadhwani-funded skilling work, Play for Peace and Magic Bus.</p>
+  </section>
+
+  <section aria-labelledby="services">
+    <div class="svc-head">
+      <span class="label">Consulting expertise</span>
+      <h2 id="services">Where I can help</h2>
+    </div>
+    <div class="svc">
+      <article>
+        <h3>SaaS &amp; learning products</h3>
+        <p>Product discovery, roadmaps and release planning; multi-tenant rollouts across institutions; onboarding, adoption and customer success that lead to renewal.</p>
+        <span class="for">For SaaS, EdTech and HR-tech teams</span>
+      </article>
+      <article>
+        <h3>AI in learning</h3>
+        <p>AI coach bots, AI-assisted course design, and AI adoption programmes that change what a role does on Monday morning.</p>
+        <span class="for">For L&amp;D and product leaders</span>
+      </article>
+      <article>
+        <h3>Emotional intelligence &amp; sentiment</h3>
+        <p>Sentiment analysis of feedback, surveys and conversations, mapped to Plutchik's Wheel of Emotions, then turned into product, coaching and engagement decisions.</p>
+        <span class="for">For people, product and CX teams</span>
+      </article>
+      <article>
+        <h3>Capability programmes</h3>
+        <p>Diagnosis first, then curriculum, corporate training and facilitation in person or online, with impact reporting leaders can act on.</p>
+        <span class="for">For enterprises, universities and institutes</span>
+      </article>
+      <article>
+        <h3>Operations &amp; scale</h3>
+        <p>SOPs, QA, OKRs, budgets, vendors and distributed teams, so a pilot that works in twelve sites still works in two thousand.</p>
+        <span class="for">For growing teams and networks</span>
+      </article>
+      <article>
+        <h3>Fractional leadership</h3>
+        <p>Part-time Head of Learning, Product or Delivery for a defined period, until the function can stand on its own.</p>
+        <span class="for">For start-ups between stages</span>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="ei">
+    <div class="ei">
+      <div class="prose">
+        <span class="label">Emotional intelligence</span>
+        <h2 id="ei">People decide with feelings first</h2>
+        <p>A low completion rate, a churned customer or a disengaged team usually has an emotion behind it before it has a number. Plutchik's wheel names eight primary emotions and how they combine.</p>
+        <p>I use it to read sentiment in learner feedback, employee surveys and customer conversations, find where trust drops or fear rises, and design the fix into the product, the programme or the coaching.</p>
+        <div class="legend" aria-label="Plutchik's eight primary emotions">
+          <span><i style="background:var(--p-joy)"></i>Joy</span>
+          <span><i style="background:var(--p-trust)"></i>Trust</span>
+          <span><i style="background:var(--p-fear)"></i>Fear</span>
+          <span><i style="background:var(--p-surprise)"></i>Surprise</span>
+          <span><i style="background:var(--p-sadness)"></i>Sadness</span>
+          <span><i style="background:var(--p-disgust)"></i>Disgust</span>
+          <span><i style="background:var(--p-anger)"></i>Anger</span>
+          <span><i style="background:var(--p-anticipation)"></i>Anticipation</span>
+        </div>
+      </div>
+      <div class="wheel" role="img" aria-label="Plutchik's Wheel of Emotions with eight primary emotions arranged in a circle, opposites facing each other">
+        <svg viewBox="-165 -125 330 252" id="wheel"></svg>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="approach">
+    <span class="label">How I work</span>
+    <h2 id="approach" style="font-size:clamp(1.9rem,4vw,2.7rem);margin-top:1rem">Resilience and renewal</h2>
+    <div class="pairs">
+      <div><h3>Root causes first</h3><p>Is it a learning need, or a process, management or tooling problem dressed up as one?</p></div>
+      <div><h3>Co-designed</h3><p>Built with the people who deliver the work and the people who use it.</p></div>
+      <div><h3>Measured in your terms</h3><p>Adoption, time to productivity, conversion and renewal, not completion rates.</p></div>
+      <div><h3>Long walks</h3><p>Humour, stories and more questions than answers. The real conversation usually happens on the walk.</p></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="markets">
+    <span class="label">Industries &amp; market verticals</span>
+    <h2 id="markets" style="font-size:clamp(1.9rem,4vw,2.7rem);margin-top:1rem">Rooms I have worked in</h2>
+    <div class="ind">
+      <p><strong>Technology &amp; IT</strong>Global IT MNCs; Indian IT services majors</p>
+      <p><strong>Retail &amp; Lifestyle</strong>Fashion, eyewear and jewellery brands; e-commerce</p>
+      <p><strong>Banking &amp; Finance</strong>Indian public and private banks; UAE banks</p>
+      <p><strong>Government</strong>State e-governance programme</p>
+      <p><strong>Oil, Gas &amp; Energy</strong>Global energy majors (Middle East, US)</p>
+      <p><strong>Education</strong>20 universities, B-schools, 2,000+ preschools</p>
+      <p><strong>Automotive &amp; Industrial</strong>Global automotive and industrial MNCs</p>
+      <p><strong>Non-profit &amp; Healthcare</strong>Global skilling foundation; US health non-profit</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="creds">
+    <span class="label">Education &amp; certifications</span>
+    <h2 id="creds" style="font-size:clamp(1.9rem,4vw,2.7rem);margin-top:1rem">Bachelor of Commerce, Kuvempu University, Shimoga</h2>
+    <ul class="creds">
+      <li>Certified Learning and Development Manager <span>CAMI &amp; Middle Earth HR</span></li>
+      <li>Train the Trainer <span>Dale Carnegie India</span></li>
+      <li>Certified Usability Analyst <span>Human Factors International</span></li>
+      <li>Diploma in Experiential Education</li>
+      <li>Instructional Design <span>Vibrant Wavelength</span></li>
+      <li>NLP Foundation</li>
+      <li>Play for Peace</li>
+      <li>PGDCA</li>
+      <li>Advanced Diploma in Animation</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="travel">
+    <div class="prose">
+      <span class="label">Off the clock</span>
+      <h2 id="travel" style="font-size:clamp(1.9rem,4vw,2.7rem)">A traveller by choice, and not only to places</h2>
+      <p class="lede">I travel through people, systems, products, strategy, solutions and services. Each one is a road worth understanding before trying to change it.</p>
+      <p>My best hours go to playing with my daughter, who asks better questions than most clients, and to long rides on my Royal Enfield Bullet. Both teach me what the work does: stay curious, read the road, and adapt without losing the destination.</p>
+    </div>
+  </section>
+
+  <section aria-labelledby="talk">
+    <div class="contact">
+      <span class="label">Start a conversation</span>
+      <h2 id="talk">Building something that must prove itself?</h2>
+      <p class="lede">I'd be glad to walk part of the road with you.</p>
+      <div class="mail">
+        <code id="email">duggasan@gmail.com</code>
+        <button type="button" id="copy">Copy email</button>
+      </div>
+      <p class="phone">Phone / WhatsApp: <span>+91 97421 35732</span></p>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/sandugga" target="_blank" rel="noopener">LinkedIn: in/sandugga</a>
+        <a href="resume.html">Full profile</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>Santhikumar Dugga · Learning, Product &amp; Capability Consultant · Bangalore / Remote</footer>
+</div>
+
+<script>
+(function(){
+  var svg=document.getElementById('wheel'), ns='http://www.w3.org/2000/svg';
+  var emo=[['Joy','--p-joy'],['Trust','--p-trust'],['Fear','--p-fear'],['Surprise','--p-surprise'],['Sadness','--p-sadness'],['Disgust','--p-disgust'],['Anger','--p-anger'],['Anticipation','--p-anticipation']];
+  emo.forEach(function(e,i){
+    var g=document.createElementNS(ns,'g');
+    g.setAttribute('transform','rotate('+(i*45)+')');
+    [[100,.35],[72,.65],[44,1]].forEach(function(r){
+      var p=document.createElementNS(ns,'path'), w=r[0]*0.36;
+      p.setAttribute('d','M0 -18 C '+(-w)+' '+(-r[0]*0.45)+', '+(-w*0.7)+' '+(-r[0]*0.85)+', 0 '+(-r[0])+' C '+(w*0.7)+' '+(-r[0]*0.85)+', '+w+' '+(-r[0]*0.45)+', 0 -18 Z');
+      p.setAttribute('fill','var('+e[1]+')');
+      p.setAttribute('fill-opacity',r[1]);
+      g.appendChild(p);
+    });
+    svg.appendChild(g);
+    var a=(i*45-90)*Math.PI/180, t=document.createElementNS(ns,'text');
+    var vert=Math.abs(Math.cos(a))<0.2, rr=vert?110:105;
+    t.setAttribute('x',(Math.cos(a)*rr).toFixed(1));
+    t.setAttribute('y',(Math.sin(a)*rr+(Math.sin(a)>0.5?8:3)).toFixed(1));
+    t.setAttribute('text-anchor', vert?'middle':(Math.cos(a)>0?'start':'end'));
+    t.textContent=e[0];
+    svg.appendChild(t);
+  });
+  var c=document.createElementNS(ns,'circle');
+  c.setAttribute('r','16');c.setAttribute('fill','var(--surface)');c.setAttribute('stroke','var(--line)');
+  svg.appendChild(c);
+
+  var btn=document.getElementById('copy'), em=document.getElementById('email');
+  btn.addEventListener('click',function(){
+    var done=function(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy email';},1800);};
+    var fallback=function(){var r=document.createRange();r.selectNodeContents(em);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected, press Ctrl+C';};
+    try{navigator.clipboard.writeText(em.textContent).then(done,fallback);}catch(e){fallback();}
+  });
+})();
+</script>
+
+</body>
+</html>
